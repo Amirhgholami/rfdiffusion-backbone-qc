@@ -1,0 +1,18 @@
+@'
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+
+# Structural data: do not publish by default
+input/*.pdb
+input/*.cif
+input/*.mmcif
+
+# Generated results
+results/*
+!results/.gitkeep
+'@ | Set-Content .gitignore
+# Generated package metadata
+src/*.egg-info/
